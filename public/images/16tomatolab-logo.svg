@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 693.2 800.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_未命名漸層_63);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #9bb0b0;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="_未命名漸層_63" data-name="未命名漸層 63" x1="346.6" y1="42.4" x2="346.6" y2="735.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffa774"/>
+      <stop offset="1" stop-color="red"/>
+    </linearGradient>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <g>
+      <path class="cls-1" d="m346.79,0L.38,200v400l346.41,200,346.41-200V200L346.79,0Zm-.38.04L0,200.04v400l346.41,200,346.41-200V200.04L346.41.04Z"/>
+      <polygon class="cls-3" points="346.6 689.3 165.55 584.77 34.83 584.77 100.19 471.57 100.19 262.51 281.24 157.98 346.6 44.77 411.96 157.98 593.01 262.51 593.01 471.57 658.37 584.77 527.65 584.77 346.6 689.3"/>
+      <polygon class="cls-2" points="346.6 214 519.81 514 173.4 514 346.6 214"/>
+    </g>
+  </g>
+</svg>

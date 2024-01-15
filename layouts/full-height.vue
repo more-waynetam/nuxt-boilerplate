@@ -2,7 +2,7 @@
     <v-app id="inspire" class="tomato">
         <nav-top-common/>
         <v-main>
-            <v-container>
+            <v-container class="fill-height justify-center">
                 <nuxt-page/>
             </v-container>
         </v-main>

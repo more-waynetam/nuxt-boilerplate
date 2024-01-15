@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+$font-family: "helvetica neue", helvetica, arial, sans-serif;
+$border-color:#ddd;
+$background-color:#E8EDED;
+$text-color:#636B70;
+
+$text-primary:#00C7C9;
+
+body{
+    font-family: $font-family;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+.tomato .v-app-bar, .tomato .v-toolbar, .tomato .v-footer{
+    background-color: $background-color !important;
+}
+
+.tomato.v-application {
+    background-color: $background-color;
+  }
+
+html, .tomato .text-h1, .tomato .text-h2, .tomato .text-h3, .tomato .text-h4, .tomato .text-h5{
+    font-family: $font-family !important;
+}
+
+.tomato .v-card--variant-outlined{
+    border: thin solid $border-color;
+}
+
+.tomato .v-card--variant-elevated{
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.8),
+            10px 10px 15px rgba(70,70,70,0.2);
+
+}
+
+.tomato .v-card{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tomato{
+    .v-sheet{
+        background:$background-color;
+    }
+
+    .v-navigation-drawer{
+        background-color: $background-color;
+    }
+} 
+
+.tomato{
+    h1,h2,h3,h4,h5, .text-h1, .text-h2, .text-h3, .text-h4, .text-h5{
+        font-weight: 300;
+        color:$text-color;
+    }
+}
+
+.tomato{
+    .v-app-bar{
+        border-bottom: thin solid $border-color;
+    }
+}

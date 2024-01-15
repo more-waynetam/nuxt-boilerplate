@@ -1,0 +1,26 @@
+{
+    "common":{
+        "lab":"實驗室",
+        "home":"首頁",
+        "enter":"進入",
+        "setting":"設定",
+        "assistant":"助理",
+        "chatgpt":"CHATGPT",
+        "chat":"聊天室",
+        "cancel":"取消",
+        "ok":"確定"
+    },
+    "chat":{
+        "assistant":"助理",
+        "no-chats":"沒有對話",
+        "add-chat":"新增對話",
+        "chat-name":"對話名稱",
+        "chat-name-placeholder":"請輸入對話名稱"
+    },
+    "auth":{
+        "loginSubtitle":"歡迎登入智茄實驗室",
+        "register":"註冊",
+        "login":"登入",
+        "logout":"登出"
+    }
+}
