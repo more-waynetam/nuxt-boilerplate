@@ -7,7 +7,9 @@ $border-color:#ddd;
 $background-color:#E8EDED;
 $text-color:#636B70;
 
+
 $text-primary:#00C7C9;
+$text-secondary:#c0451c;
 
 body{
     font-family: $font-family;
@@ -55,7 +57,6 @@ html, .tomato .text-h1, .tomato .text-h2, .tomato .text-h3, .tomato .text-h4, .t
 .tomato{
     h1,h2,h3,h4,h5, .text-h1, .text-h2, .text-h3, .text-h4, .text-h5{
         font-weight: 300;
-        color:$text-color;
     }
 }
 

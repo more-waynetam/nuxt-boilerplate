@@ -1,6 +1,7 @@
 <template>
-  <ChatAppBar />
-  <ChatThreadsDrawer />
+  <ChatAppBar @thread-drawer="isThreadDrawerOpen=!isThreadDrawerOpen" @extra-drawer="isExtraDrawerOpen=!isExtraDrawerOpen" />
+  <ChatThreadsDrawer v-model="isThreadDrawerOpen" />
+  <ChatExtraDrawer :assets="assets" v-model="isExtraDrawerOpen"></ChatExtraDrawer>
   <v-main>
     <ChatMessages
       :items="openaiItems || []"
@@ -8,7 +9,6 @@
       @dalle-3="handleDallE"
     />
   </v-main>
-  <ChatExtraDrawer :assets="assets"></ChatExtraDrawer>
   <v-footer app height="72">
     <ChatInput @send="sendMessage" />
   </v-footer>
@@ -25,6 +25,14 @@ DallESize,
 } from "~/models/openai.model";
 import { useChatgptStore } from "~/stores/useChatgptStore";
 import { useAssetStore } from "~/stores/useAssetStore";
+import { useDisplay } from "vuetify/lib/framework.mjs";
+
+const display=ref(useDisplay())
+const isThreadDrawerOpen = ref(display.value.mdAndUp);
+const isExtraDrawerOpen = ref(display.value.mdAndUp);
+
+
+
 const chatgptStore = useChatgptStore();
 const assetStore = useAssetStore();
 const {
@@ -139,8 +147,9 @@ const handleMidjourney = (content: string) => {
 
     if (updatedAsset.progress === "done") {
       console.log("done");
-      //assetsRefresh();
       sse.close();
+    }else{
+      console.log("progress",updatedAsset.progress);
     }
   };
   sse.onopen = (e: any) => {

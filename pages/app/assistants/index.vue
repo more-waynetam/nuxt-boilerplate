@@ -14,12 +14,14 @@
   </v-row>
   <v-row>
     <v-col
-      cols="1"
-      md="4"
+      cols="12"
+      sm="4"
       lg="3"
+      xlg="2"
       v-for="(assistant, index) in assistants"
       :key="index"
-      ><assistant-item :assistant="assistant" @edit="showAssistantForm(assistant)"></assistant-item>
+      class="flex-grow-1"
+      ><assistant-item class="h-100" :assistant="assistant" @edit="showAssistantForm(assistant)"></assistant-item>
     </v-col>
   </v-row>
 </template>

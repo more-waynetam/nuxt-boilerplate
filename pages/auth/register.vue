@@ -43,7 +43,7 @@
           {{ error }}
         </p>
         <v-btn
-          class="mt-5 text-secondary"
+          class="mt-5"
           block
           color="primary"
           variant="flat"
@@ -110,5 +110,6 @@ const registerEvent = async () => {
 //@ts-ignore
 definePageMeta({
   layout: "full-height",
+  auth:'guest-only'
 });
 </script>

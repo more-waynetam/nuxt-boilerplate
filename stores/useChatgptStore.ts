@@ -4,6 +4,7 @@ import { ref } from "vue";
 import { useApi } from "~/composables/useApi";
 import type { IAsset } from "~/models/asset.model";
 import type { DallESize, IAssistant, IMessage, IParagraph, IThread } from "~/models/openai.model";
+import type { IPaginateResponse } from "~/models/paginate.model";
 
 export const useChatgptStore = defineStore("chatgptStore", {
   state: () => ({
@@ -59,7 +60,7 @@ export const useChatgptStore = defineStore("chatgptStore", {
         return [];
       }
     },
-    getThreads: async (): Promise<Array<IThread>> => {
+    getThreads: async (): Promise<IPaginateResponse<IThread>> => {
       const api = useApi();
       const url = `/openai/threads`;
       const response = await api.get(url);

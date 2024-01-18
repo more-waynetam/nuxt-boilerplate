@@ -1,6 +1,7 @@
 <template>
   <v-card width="400" height="600" color="background">
-    <v-card-text>
+    <v-card-text class="d-flex flex-column justify-center">
+      <h1 class="text-center text-h2 mt-10 my-5">tomatoLAB</h1>
       <p class="text-body text-center text-disabled mt-2">
         {{ $t("auth.loginSubtitle") }}
       </p>

@@ -44,6 +44,7 @@ export const useSse = (url: string):EventSourcePolyfill => {
   }
   const sse = new EventSourcePolyfill(`${baseURL}${url}`, {
     headers,
+    heartbeatTimeout: 10*60*1000,
   });
   return sse;
 }

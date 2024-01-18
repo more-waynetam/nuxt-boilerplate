@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="244" :elevation="0" :permanent="true">
+  <v-navigation-drawer width="244" :elevation="0">
     <v-sheet width="100%" class="pa-4">
       <p v-if="!threadsPending && threads.length == 0">
         {{ $t("chat.no-chats") }}
@@ -105,9 +105,9 @@ const {
 } = useAsyncData("threads", async () => {
   const result = await chatgptStore.getThreads();
   if (chatgptStore.currentThread == null) {
-    chatgptStore.currentThread = result[0];
+    chatgptStore.currentThread = result.data[0];
   }
-  threads.value = result;
+  threads.value = result.data;
   return threads;
 });
 
